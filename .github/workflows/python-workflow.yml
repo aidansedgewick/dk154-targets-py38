@@ -46,7 +46,7 @@ jobs:
         pytest test_dk154_targets --cov=dk154_targets --cov-report xml
         
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v4
+      uses: codecov/codecov-action@v3.1.6
       with:
         token: ${{ secrets.CODECOV_TOKEN }} # required
         verbose: true # optional (default = false)
